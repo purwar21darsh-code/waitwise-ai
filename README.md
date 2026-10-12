@@ -19,7 +19,7 @@ WAITWISE helps Indian students and early-career professionals decide whether to 
 | Savings goals | Multiple local plans with progress and completion estimates; no funds move |
 | Monad Testnet vault | Solidity contract and wallet integration implemented; contract address and deployment remain pending |
 | AI explanation | Optional server-side OpenAI-compatible provider; deterministic fallback when unavailable |
-| Live frontend / public GitHub repository | Not deployed or published from this workspace |
+| Public demo | [Open WAITWISE AI](https://purwar21darsh-code.github.io/waitwise-ai/) — hosted on GitHub Pages; the hosted version uses deterministic explanations and has no deployed vault address |
 
 ## Requirements
 
@@ -123,4 +123,4 @@ hardhat.config.ts
 - First 100 users experiment: [`docs/distribution.md`](./docs/distribution.md)
 - Logo PNG and regeneration specification: [`docs/logo.md`](./docs/logo.md)
 
-To submit publicly, publish this repository through a GitHub account, verify public access, and grant the requested hackathon account access if required by the submission process. GitHub credentials, a remote repository, and hosting credentials were not supplied here, so those external steps remain pending.
+The repository is public and the static demo is live at [waitwise-ai](https://purwar21darsh-code.github.io/waitwise-ai/). For a hackathon submission, share the demo and repository links; add a reviewer as a collaborator only if the submission process requires it. The hosted static demo does not include the optional API service or a deployed Monad Testnet vault, so explanations use the deterministic fallback and vault transactions are unavailable there.
