@@ -1,0 +1,49 @@
+{
+  "name": "waitwise-ai",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "concurrently -k \"pnpm:dev:web\" \"pnpm:dev:api\"",
+    "dev:web": "vite --host 127.0.0.1",
+    "dev:api": "tsx watch api/server.ts",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "typecheck": "tsc -b",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:contracts": "hardhat test",
+    "compile:contracts": "hardhat compile",
+    "deploy:testnet": "hardhat run contracts/scripts/deploy.ts --network monadTestnet"
+  },
+  "dependencies": {
+    "ethers": "^6.15.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "recharts": "^2.15.4",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.14",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@types/chai": "^5.2.2",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^24.7.2",
+    "@types/react": "^19.1.16",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.4",
+    "chai": "^5.2.1",
+    "concurrently": "^9.2.1",
+    "dotenv": "^17.2.3",
+    "hardhat": "^2.26.3",
+    "@nomicfoundation/hardhat-ethers": "^3.1.0",
+    "jsdom": "^26.1.0",
+    "tailwindcss": "^4.1.14",
+    "tsx": "^4.20.6",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.9",
+    "vitest": "^3.2.4"
+  }
+}

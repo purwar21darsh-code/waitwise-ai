@@ -1,0 +1,10 @@
+node_modules/
+dist/
+artifacts/
+cache/
+coverage/
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+hardhat-artifacts/
